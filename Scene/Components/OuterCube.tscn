@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://outercube"]
+
+[ext_resource type="BoxMesh" uid="uid://outercubemesh" path="res://Scene/Components/OuterCubeMesh.tres"]
+[ext_resource type="StandardMaterial3D" uid="uid://outercubemat" path="res://Scene/Components/OuterCubeMaterial.tres"]
+
+[node name="OuterCube" type="MeshInstance3D"]
+mesh = ExtResource("outercubemesh")
+material_override = ExtResource("outercubemat")

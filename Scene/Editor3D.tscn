@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://editor3d"]
+
+[ext_resource type="PackedScene" uid="uid://innercube_scene" path="res://Scene/Components/InnerCube.tscn"]
+[ext_resource type="PackedScene" uid="uid://outercube_scene" path="res://Scene/Components/OuterCube.tscn"]
+
+[node name="Editor3D" type="Node3D"]
+
+[node name="SceneComponents" type="Node3D" parent="."]
+[node name="OuterCube" parent="SceneComponents" instance="ExtResource("outercube_scene")"]
+[node name="InnerCube" parent="SceneComponents" instance="ExtResource("innercube_scene")"]
+
+[node name="ElementsContainer" type="Node3D" parent="."]
+
+[node name="CoordinateSystem" type="MeshInstance3D" parent="."]
+mesh = SubResource("uid://coordinate_mesh")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 5)
+current = true

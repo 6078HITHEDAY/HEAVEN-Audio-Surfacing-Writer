@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dgmhsq2cq4s7h"]
+
+[node name="Runtime3D" type="Node3D"]
+
+[node name="PreviewElements" type="Node3D" parent="."]
+
+[node name="JudgementEffects" type="GPUParticles3D" parent="."]
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 5)
+current = true

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://innercube"]
+
+[ext_resource type="BoxMesh" uid="uid://innercubemesh" path="res://Scene/Components/InnerCubeMesh.tres"]
+[ext_resource type="StandardMaterial3D" uid="uid://innercubemat" path="res://Scene/Components/InnerCubeMaterial.tres"]
+
+[node name="InnerCube" type="MeshInstance3D"]
+mesh = ExtResource("innercubemesh")
+material_override = ExtResource("innercubemat")
+transform = Transform3D.IDENTITY.translated(Vector3(0, 0.5, 0))
